@@ -1,5 +1,6 @@
 .toppings {
     width: 25%;
+    height: fit-content;
     background-color: #fff8df;
     padding: 2rem;
     border-radius: 1rem;
@@ -14,4 +15,8 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.toppings-list-item {
+    margin-bottom: .5rem;
 }

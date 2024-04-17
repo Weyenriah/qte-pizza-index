@@ -159,7 +159,7 @@ function show_all_toppings() {
     $terms = get_terms('toppings');
 
     foreach($terms as $term) { ?>
-        <li>
+        <li class="toppings-list-item">
             <input class="checkbox" type="checkbox" id="<?php echo $term->slug; ?>" name="<?php echo $term->slug; ?>" value="<?php echo $term->slug; ?>">
             <label for="<?php echo $term->slug; ?>"><?php echo $term->name; ?></label>
         </li>
