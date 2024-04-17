@@ -1,3 +1,12 @@
+.pizzas-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pizzas-wrapper {
+    width: 70%;
+}
+
 #pizzas {
     display: flex;
     flex-direction: column;

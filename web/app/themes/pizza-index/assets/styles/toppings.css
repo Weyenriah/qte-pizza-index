@@ -1,0 +1,17 @@
+.toppings {
+    width: 25%;
+    background-color: #fff8df;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.toppings-title {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+}
+
+.toppings-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

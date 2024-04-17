@@ -11,6 +11,7 @@ function my_register_script_method () {
     wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/styles/main.css' );
     wp_enqueue_style( 'search', get_template_directory_uri() . '/assets/styles/search.css' );
     wp_enqueue_style( 'pizza', get_template_directory_uri() . '/assets/styles/pizza.css' );
+    wp_enqueue_style( 'toppings', get_template_directory_uri() . '/assets/styles/toppings.css' );
 
     wp_localize_script(
         'jquery',
