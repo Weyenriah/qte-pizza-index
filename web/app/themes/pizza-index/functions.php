@@ -7,6 +7,11 @@ function my_register_script_method () {
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
     wp_enqueue_script( 'jquery' );
 
+    // Enqueue style pizzas.css
+    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/styles/main.css' );
+    wp_enqueue_style( 'search', get_template_directory_uri() . '/assets/styles/search.css' );
+    wp_enqueue_style( 'pizza', get_template_directory_uri() . '/assets/styles/pizza.css' );
+
     wp_localize_script(
         'jquery',
         'pizza_ajaxcalls',

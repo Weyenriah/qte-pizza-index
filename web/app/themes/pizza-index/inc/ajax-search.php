@@ -55,7 +55,7 @@ function search_pizzas() {
 
     if($query->have_posts()) {
         while($query->have_posts()): $query->the_post();
-            echo '<h2>' . get_the_title() . '</h2>';
+            the_pizza();
         endwhile;
         wp_reset_postdata();
     } else {
@@ -78,10 +78,22 @@ function show_all_pizzas() {
 
     if($query->have_posts()) {
         while($query->have_posts()): $query->the_post();
-            echo '<h2>' . get_the_title() . '</h2>';
+            the_pizza();
         endwhile;
         wp_reset_postdata();
     } else {
         echo 'No pizzas found';
     }
+}
+
+function the_pizza() {
+    echo
+        '<article class="pizza">'
+            . '<img src="' . get_template_directory_uri() . '/assets/icons/pizza.svg" alt="' . get_the_title() . '">'
+            . '<div>'
+                . '<h2 class="pizza-title">' . get_the_title() . '</h2>'
+                . '<p class="pizza-description">' . get_field('description') . '</p>'
+            . '</div>'
+        . '</article>'
+    ;
 }

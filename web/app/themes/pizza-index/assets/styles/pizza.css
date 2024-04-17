@@ -1,0 +1,21 @@
+#pizzas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pizza {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.pizza-title {
+    font-size: 1rem;
+    margin: 0 0 .5rem 0;
+}
+
+.pizza-description {
+    font-size: 1rem;
+    margin: 0;
+}

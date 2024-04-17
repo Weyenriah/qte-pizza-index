@@ -1,0 +1,21 @@
+#search {
+    width: 100%;
+    padding: 1rem 1.25rem 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-wrapper {
+    display: block;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+}
