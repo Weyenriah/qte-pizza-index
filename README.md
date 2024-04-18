@@ -22,3 +22,21 @@ Usually I would've wanted to create something a little bit more fancy, but due t
   ```
 3. `docker compose up`
 4. `wp server`
+5. Now you should be able to go to http://localhost:8080/wp/wp-admin/. Do the Wordpress installation.
+
+## Data you could use, if you want to
+Add these pizzas to the Pizza Post Type.
+```
+Hawaii
+A pizza made with ham, tomato sauce and pineapple.
+```
+
+```
+Vesuvius
+A pizza made with ham and tomato sauce.
+```
+
+```
+Kebab Pizza
+A pizza made with the finest kebab meat, tomato sauce and onion.
+```
