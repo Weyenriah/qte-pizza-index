@@ -2,7 +2,6 @@
 /**
  * Enqueue scripts and styles.
  */
-add_action('wp_enqueue_scripts', 'my_register_script_method');
 function my_register_script_method () {
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
     wp_enqueue_script( 'jquery' );
@@ -22,6 +21,7 @@ function my_register_script_method () {
         )
     );
 }
+add_action('wp_enqueue_scripts', 'my_register_script_method');
 
 /**
  * Register custom post type for Pizzas.
