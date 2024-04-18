@@ -64,11 +64,16 @@ function pizza_index_custom_taxonomy() {
 add_action('init', 'pizza_index_custom_taxonomy');
 
 /**
+ * Register render functions.
+ */
+require_once 'inc/render.php';
+
+/**
  * Register fields from Extended ACF.
  */
-require_once 'inc/pizza-fields.php';
+require_once 'inc/fields.php';
 
 /**
  * Add AJAX fetch.
  */
-require_once 'inc/ajax-search.php';
+require_once 'inc/search.php';

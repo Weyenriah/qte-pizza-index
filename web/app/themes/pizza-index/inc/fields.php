@@ -1,11 +1,12 @@
 <?php
 /**
- * Register custom fields for Pizzas CPT.
+ * Register custom fields.
  */
 
 use Extended\ACF\Fields\Textarea;
 use Extended\ACF\Location;
 
+// Register custom fields for the pizza post type.
 register_extended_field_group([
     'title' => 'Pizza',
     'fields' => [
