@@ -39,7 +39,7 @@ function pizza_index_custom_post_type() {
 			),
             'public'      => true,
             'has_archive' => false,
-            'supports'   => array('title', 'custom-fields', 'thumbnail'),
+            'supports'   => array('title', 'custom-fields' ),
             'taxonomies' => array('toppings'),
             'show_in_rest' => true,
 		)
@@ -68,14 +68,14 @@ add_action('init', 'pizza_index_custom_taxonomy');
 /**
  * Register render functions.
  */
-require_once 'inc/render.php';
+require 'inc/render.php';
 
 /**
  * Register fields from Extended ACF.
  */
-require_once 'inc/fields.php';
+require 'inc/fields.php';
 
 /**
  * Add AJAX search fetch.
  */
-require_once 'inc/search.php';
+require 'inc/search.php';

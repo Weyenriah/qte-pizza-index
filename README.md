@@ -9,17 +9,7 @@ Usually I would've wanted to create something a little bit more fancy, but due t
 
 ## Install using WP CLI
 1. Install WP CLI to your command line: https://make.wordpress.org/cli/handbook/guides/installing/
-2. Add following env-variables to .env as well as add generated salt keys: https://roots.io/salts.html
-  ```
-  DB_NAME='mydb'
-  DB_USER='root'
-  DB_PASSWORD='root'
-  DB_HOST='127.0.0.1'
-
-  WP_ENV='development'
-  WP_HOME='http://localhost:8080'
-  WP_SITEURL="${WP_HOME}/wp"
-  ```
+2. `composer install`
 3. `docker compose up`
 4. `wp server`
 5. Now you should be able to go to http://localhost:8080/wp/wp-admin/. Do the Wordpress installation.

@@ -42,6 +42,7 @@
     "roots/wp-password-bcrypt": "1.1.0",
     "wpackagist-theme/twentytwentyfour": "^1.0",
     "ext-mysqli": "*",
+    "wordpress-premium/advanced-custom-fields-pro": "^6.2",
     "vinkla/extended-acf": "^14.0"
   },
   "require-dev": {
