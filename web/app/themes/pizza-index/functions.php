@@ -3,14 +3,9 @@
  * Enqueue scripts and styles.
  */
 function my_register_script_method () {
+    // Enqueue scripts
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
     wp_enqueue_script( 'jquery' );
-
-    // Enqueue style pizzas.css
-    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/styles/main.css' );
-    wp_enqueue_style( 'search', get_template_directory_uri() . '/assets/styles/search.css' );
-    wp_enqueue_style( 'pizza', get_template_directory_uri() . '/assets/styles/pizza.css' );
-    wp_enqueue_style( 'toppings', get_template_directory_uri() . '/assets/styles/toppings.css' );
 
     wp_localize_script(
         'jquery',
@@ -20,6 +15,13 @@ function my_register_script_method () {
             'nonce' => wp_create_nonce( 'ajax-nonce' ),
         )
     );
+
+    // Enqueue styles
+    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/styles/main.css' );
+    wp_enqueue_style( 'search', get_template_directory_uri() . '/assets/styles/search.css' );
+    wp_enqueue_style( 'pizza', get_template_directory_uri() . '/assets/styles/pizza.css' );
+    wp_enqueue_style( 'toppings', get_template_directory_uri() . '/assets/styles/toppings.css' );
+
 }
 add_action('wp_enqueue_scripts', 'my_register_script_method');
 
@@ -74,6 +76,6 @@ require_once 'inc/render.php';
 require_once 'inc/fields.php';
 
 /**
- * Add AJAX fetch.
+ * Add AJAX search fetch.
  */
 require_once 'inc/search.php';
