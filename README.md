@@ -13,11 +13,11 @@ Usually I would've wanted to create something a little bit more fancy, but due t
 (To use example db)
 
 (Inside the project)
-1. Run `mysql -u root -p -h 127.0.0.1 --port 3306 mydb < example_db.sql`
-2. Run `cp .env.local .env`
-3. Run `composer install`
-4. Run `docker compose up`
-5. Run `wp server`
+1. Run `cp .env.local .env`
+2. Run `composer install`
+3. Run `docker compose up`
+4. Run `wp server`
+5. Run `mysql -u root -p -h 127.0.0.1 --port 3306 mydb < example_db.sql`
 6. Now you should be able to go to [http://localhost:8080/wp/wp-admin/](http://localhost:8080/wp/wp-admin/).
 
 (Wordpress installation and configuration)
