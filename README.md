@@ -28,15 +28,21 @@ Usually I would've wanted to create something a little bit more fancy, but due t
 Add these pizzas to the Pizza Post Type.
 ```
 Hawaii
+```
+```
 A pizza made with ham, tomato sauce and pineapple.
 ```
-
+---
 ```
 Vesuvius
+```
+```
 A pizza made with ham and tomato sauce.
 ```
-
+---
 ```
 Kebab Pizza
+```
+```
 A pizza made with the finest kebab meat, tomato sauce and onion.
 ```
