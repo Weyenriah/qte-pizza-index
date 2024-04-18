@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bd78a2037b18d371cc75f4355c2f9eb",
+    "content-hash": "f0c8b7e737182bdbbd0b80d55ad05193",
     "packages": [
         {
             "name": "composer/installers",
@@ -1026,6 +1026,89 @@
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
+            "name": "symfony/var-dumper",
+            "version": "v7.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "66d13dc207d5dab6b4f4c2b5460efe1bea29dbfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/66d13dc207d5dab6b4f4c2b5460efe1bea29dbfb",
+                "reference": "66d13dc207d5dab6b4f4c2b5460efe1bea29dbfb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/console": "<6.4"
+            },
+            "require-dev": {
+                "ext-iconv": "*",
+                "symfony/console": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0",
+                "symfony/uid": "^6.4|^7.0",
+                "twig/twig": "^3.0.4"
+            },
+            "bin": [
+                "Resources/bin/var-dump-server"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides mechanisms for walking through any arbitrary PHP variable",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/var-dumper/tree/v7.0.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-03-19T11:57:22+00:00"
+        },
+        {
             "name": "vinkla/extended-acf",
             "version": "14.0.1",
             "source": {
@@ -1224,12 +1307,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "5a4b95f36e44b3e55eb3b53a1108ac0fc8e28b37"
+                "reference": "16afe68c1b79917b4e8d8222a39ca4db31b63377"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5a4b95f36e44b3e55eb3b53a1108ac0fc8e28b37",
-                "reference": "5a4b95f36e44b3e55eb3b53a1108ac0fc8e28b37",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/16afe68c1b79917b4e8d8222a39ca4db31b63377",
+                "reference": "16afe68c1b79917b4e8d8222a39ca4db31b63377",
                 "shasum": ""
             },
             "conflict": {
@@ -1809,7 +1892,7 @@
                 "thinkcmf/thinkcmf": "<=5.1.7",
                 "thorsten/phpmyfaq": "<3.2.2",
                 "tikiwiki/tiki-manager": "<=17.1",
-                "timber/timber": "<1.23.1|>=1.24,<1.24.1|>=2,<2.1",
+                "timber/timber": ">=0.16.6,<1.23.1|>=1.24,<1.24.1|>=2,<2.1",
                 "tinymce/tinymce": "<7",
                 "tinymighty/wiki-seo": "<1.2.2",
                 "titon/framework": "<9.9.99",
@@ -1965,7 +2048,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-18T09:04:30+00:00"
+            "time": "2024-04-18T17:04:22+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
