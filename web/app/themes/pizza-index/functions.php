@@ -79,3 +79,8 @@ require 'inc/fields.php';
  * Add AJAX search fetch.
  */
 require 'inc/search.php';
+
+/**
+ * Add AJAX search fetch.
+ */
+require 'inc/blocks.php';

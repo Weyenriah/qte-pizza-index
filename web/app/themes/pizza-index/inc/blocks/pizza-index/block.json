@@ -1,0 +1,15 @@
+{
+    "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+    "name": "pizza-index",
+    "title": "Pizza Index",
+    "description": "A pizza index block.",
+    "icon": "admin-post",
+    "acf": {
+      "mode": "edit",
+      "renderTemplate": "template.php"
+    },
+    "supports": {
+      "align": false,
+      "mode": false
+    }
+}

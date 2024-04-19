@@ -28,12 +28,33 @@ function show_all_pizzas() {
 /**
  * Display a pizza.
  */
-function the_pizza() { ?>
+function the_pizza() {
+    $pizza_ID = get_the_ID();
+    ?>
     <article class="pizza">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/pizza.svg" alt="<?php the_title(); ?>">
+        <img
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/icons/pizza.svg"
+            alt="<?php the_title(); ?>"
+        >
         <div>
-            <h2 class="pizza-title"><?php the_title(); ?></h2>
-            <p class="pizza-description"><?php the_field('description'); ?></p>
+            <h2 class="pizza-title">
+                <?php the_title(); ?>
+            </h2>
+            <p class="pizza-description">
+                <?php the_field( 'description', $pizza_ID ); ?>
+            </p>
+            <ul class="pizza-descriptives">
+                <?php
+                if( have_rows( 'descriptives', $pizza_ID ) ) {
+                    while( have_rows( 'descriptives', $pizza_ID ) ) {
+                        the_row();
+                        ?>
+                        <li class="pizza-descriptive">
+                            <?php the_sub_field( 'word' ); ?>
+                        </li>
+                    <?php }
+                } ?>
+            </ul>
         </div>
     </article>
 <?php }
@@ -46,8 +67,16 @@ function show_all_toppings() {
 
     foreach($terms as $term) { ?>
         <li class="toppings-list-item">
-            <input class="checkbox" type="checkbox" id="<?php echo $term->slug; ?>" name="<?php echo $term->slug; ?>" value="<?php echo $term->slug; ?>">
-            <label for="<?php echo $term->slug; ?>"><?php echo $term->name; ?></label>
+            <input
+                class="checkbox"
+                type="checkbox"
+                id="<?php echo esc_attr( $term->slug ); ?>"
+                name="<?php echo esc_attr( $term->slug ); ?>"
+                value="<?php echo esc_attr( $term->slug ); ?>"
+            >
+            <label for="<?php echo esc_attr( $term->slug ); ?>">
+                <?php echo esc_html( $term->name ); ?>
+            </label>
         </li>
     <?php }
 }
