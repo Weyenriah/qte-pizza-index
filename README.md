@@ -15,5 +15,6 @@ Specifications I set upon myself was:
 7. Try the page out on [localhost:8080](http://localhost:8080/)
 
 ## Wordpress Login when using DB Dump
-Username: root
-Password: root
+Username: `root`
+
+Password: `root`
