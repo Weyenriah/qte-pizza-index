@@ -22,6 +22,34 @@
 
         <!-- Show pizzas. -->
         <div id="pizzas">
+            <!-- Show favorites, only shown when not searched. -->
+            <div class="pizzas-favorites">
+                <?php
+                if( have_rows('favorites' ) ) {
+                    while( have_rows('favorites' ) ) {
+                        the_row();
+
+                        $pizza = get_sub_field('pizza');
+                        $pizza_ID = $pizza->ID;
+                        ?>
+                        <article class="pizzas-favorite">
+                            <img
+                                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/icons/pizza-white.svg"
+                                alt="<?php echo esc_attr( get_the_title($pizza_ID) ); ?>"
+                            >
+                            <div>
+                                <h2 class="pizza-title">
+                                    <?php echo esc_html( get_the_title($pizza_ID) ); ?>
+                                </h2>
+                                <p class="pizza-description">
+                                    <?php echo esc_html( get_field('description', $pizza_ID) ); ?>
+                                </p>
+                            </div>
+                        </article>
+                    <?php }
+                } ?>
+            </div>
+            <!-- Show all pizzas. -->
             <?php show_all_pizzas(); ?>
         </div>
     </div>

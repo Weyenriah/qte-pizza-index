@@ -81,6 +81,6 @@ require 'inc/fields.php';
 require 'inc/search.php';
 
 /**
- * Add AJAX search fetch.
+ * Add blocks.
  */
-require 'inc/blocks.php';
+require 'inc/blocks/pizza-index/pizza-index.php';
