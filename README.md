@@ -11,12 +11,19 @@ The website is made using Bedrock, because it was an easy way to use Composer to
 You'll need to install WP CLI (https://make.wordpress.org/cli/handbook/guides/installing/), mysql/mysql-client, Docker and Composer for this to work.
 
 1. Clone the repo.
-3. Run `cp .env.local .env`
-4. Run `composer install`
-5. Run `docker compose up`
-6. Run `mysql -u root -p -h 127.0.0.1 --port 3306 mydb < example_db.sql`, password is `root`.
-7. Run `wp server`
-8. Try the page out on [localhost:8080](http://localhost:8080/)
+2. Run `cp .env.local .env`
+3. Run `composer install`
+4. Run `docker compose up`
+5. Run `mysql -u root -p -h 127.0.0.1 --port 3306 mydb < example_db.sql`, password is `root`.
+6. Run `wp server`
+7. Log in at: [http://localhost:8080/wp/wp-admin](http://localhost:8080/wp/wp-admin)
+8. See page at: [http://localhost:8080](http://localhost:8080)
+
+## Setup after installation
+1. Run `docker compose up`
+2. Run `wp server`
+3. Log in at: [http://localhost:8080/wp/wp-admin](http://localhost:8080/wp/wp-admin)
+4. See page at: [http://localhost:8080](http://localhost:8080)
 
 ## Wordpress Login when using DB Dump
 Username: `root`

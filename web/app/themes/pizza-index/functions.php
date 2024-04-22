@@ -27,6 +27,8 @@ add_action('wp_enqueue_scripts', 'my_register_script_method');
 
 /**
  * Register custom post type for Pizzas.
+ * I registered this CPT before I got the Extended ACF plugin to work, I keep it here due to time and
+ * to show that I can register a CPT without a plugin.
  *
  * @link https://developer.wordpress.org/reference/functions/register_post_type/
  */
@@ -49,6 +51,7 @@ add_action('init', 'pizza_index_custom_post_type');
 
 /**
  * Register custom taxonomy for Toppings.
+ * Same as the CPT.
  *
  * @link https://developer.wordpress.org/reference/functions/register_taxonomy/
  */
