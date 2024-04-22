@@ -1,8 +1,13 @@
 <?php
 /**
- * AJAX fetch for search.
+ * Code for search functionality.
+ *
+ * @package pizza-index
  */
 
+/**
+ * AJAX fetch for search.
+ */
 function ajax_fetch() { ?>
     <script type="text/javascript">
         (function($) {

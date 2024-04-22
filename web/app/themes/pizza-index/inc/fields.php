@@ -1,6 +1,8 @@
 <?php
 /**
  * Register custom fields.
+ *
+ * @package pizza-index
  */
 
 use Extended\ACF\Fields\Textarea;

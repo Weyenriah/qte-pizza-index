@@ -3,6 +3,8 @@
  * Register Pizza Index block.
  *
  * Documentation: https://www.advancedcustomfields.com/resources/blocks/
+ *
+ * @package pizza-index
  */
 
 use Extended\ACF\Fields\Text;

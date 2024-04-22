@@ -1,8 +1,12 @@
 <?php
 /**
  * Template for Pizza Index block.
+ *
+ * @package pizza-index
  */
+
 ?>
+
 <h1 class="pizzas-heading">
     <?php the_field('title'); ?>
 </h1>

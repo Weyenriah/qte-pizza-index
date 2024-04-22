@@ -1,6 +1,8 @@
 <?php
 /**
  * All of these functions are used to render html.
+ *
+ * @package pizza-index
  */
 
 /**
