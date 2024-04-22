@@ -18,6 +18,7 @@ register_extended_field_group([
             ->helperText('Describe the pizza in detail.')
             ->required(),
         Repeater::make('Descriptives')
+            ->helperText('Add words to further describe the pizza. Make it pop!')
             ->fields([
                 Text::make('Word')
                     ->required(),

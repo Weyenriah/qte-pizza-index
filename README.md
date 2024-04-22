@@ -7,6 +7,9 @@ Specifications I set upon myself was:
 
 The website is made using Bedrock, because it was an easy way to use Composer to handle plugins instead of the Wordpress Admin UI.
 
+## Interesting files
+The interesting files are located at `/web/app/themes/pizza-index`.
+
 ## Install using WP CLI
 You'll need to install WP CLI (https://make.wordpress.org/cli/handbook/guides/installing/), mysql/mysql-client, Docker and Composer for this to work.
 
@@ -14,16 +17,10 @@ You'll need to install WP CLI (https://make.wordpress.org/cli/handbook/guides/in
 2. Run `cp .env.local .env`
 3. Run `composer install`
 4. Run `docker compose up`
-5. Run `mysql -u root -p -h 127.0.0.1 --port 3306 mydb < example_db.sql`, password is `root`.
+5. OPTIONAL! Run to add example DB: `mysql -u root -p -h 127.0.0.1 --port 3306 mydb < example_db.sql`, password is `root`.
 6. Run `wp server`
 7. Log in at: [http://localhost:8080/wp/wp-admin](http://localhost:8080/wp/wp-admin)
 8. See page at: [http://localhost:8080](http://localhost:8080)
-
-## Setup after installation
-1. Run `docker compose up`
-2. Run `wp server`
-3. Log in at: [http://localhost:8080/wp/wp-admin](http://localhost:8080/wp/wp-admin)
-4. See page at: [http://localhost:8080](http://localhost:8080)
 
 ## Wordpress Login when using DB Dump
 Username: `root`
